@@ -1,0 +1,83 @@
+import { Container, Flex, Title, Text, Button, Image, useMantineTheme, Paper } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
+import classes from "./About.module.css";
+import { Fragment } from "react";
+
+interface AboutProps {
+	content: {
+		title: string;
+		description: string;
+		team: { name: string; instagram: string; image: string }[];
+	};
+	scroll: Function;
+}
+
+interface CardProps {
+	name: string;
+	instagram: string;
+	image: string;
+	index: number;
+}
+
+function Card({ name, instagram, image, index }: CardProps) {
+	const theme = useMantineTheme();
+	const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
+	const cardAlignment = mobile ? (index % 2 == 0 ? "row" : "row-reverse") : "column-reverse";
+
+	return (
+		<Paper withBorder={false} p="sm" pr="xl" pl="xl" radius="sm" className={classes.teamCard}>
+			<div>
+				<Flex direction={cardAlignment} align="center" justify="space-between">
+					<Flex align="start" p="md">
+						<div className={index % 2 == 0 ? classes.teamText : classes.reverseText}>
+							<Text className={classes.name}>{name}</Text>
+							<a href={"https://instagram.com/" + instagram.slice(1, instagram.length)} target="_blank">
+								<Text className={classes.insta} size="xs">
+									{instagram}
+								</Text>
+							</a>
+						</div>
+					</Flex>
+					<Image w={100} radius={100} src={`${image}`} />
+				</Flex>
+			</div>
+		</Paper>
+	);
+}
+
+const About = (props: AboutProps) => {
+	const theme = useMantineTheme();
+	const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
+	const team = props.content.team.map((item, index) => <Card key={index} index={index} {...item} />);
+
+	return (
+		<section id={classes.about}>
+			<Container size="md" className={classes.content}>
+				<Flex justify="center" align="center" direction="column" mih={50}>
+					<h2 className={classes.title}>
+						{props.content.title.split("\n").map((line, index) => (
+							<Fragment key={index}>
+								{line}
+								<br />
+							</Fragment>
+						))}
+					</h2>
+					<p className={classes.description}>
+						{props.content.description.split("\n").map((line, index) => (
+							<Fragment key={index}>
+								{line}
+								<br />
+							</Fragment>
+						))}
+					</p>
+
+					<Flex className={classes.teamContainer} justify="center" align="center" direction={mobile ? "column" : "row"} m={{ base: "sm", md: "xl" }}>
+						{team}
+					</Flex>
+				</Flex>
+			</Container>
+		</section>
+	);
+};
+
+export default About;

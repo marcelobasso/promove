@@ -1,0 +1,53 @@
+#banner {
+	background-color: var(--theme-blue);
+	height: calc(100vh - 56px);
+	margin-top: 56px;
+}
+
+.banner {
+	position: relative;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.promove {
+	position: absolute;
+	right: 32px;
+	top: 64px;
+	font-weight: 700;
+	text-align: right;
+	font-size: 96px;
+	color: var(--theme-gold);
+	line-height: 120px;
+	letter-spacing: 8px;
+}
+
+.box {
+	position: absolute;
+	bottom: 32px;
+	text-align: center;
+
+	@media (max-width: $mantine-breakpoint-xs) {
+		width: 70%;
+	}
+}
+
+.subtitle {
+	color: var(--theme-gray);
+}
+
+.cta {
+	background-color: var(--theme-gold);
+	color: var(--theme-black);
+	font-weight: 700;
+	transition: all 1s;
+
+	@mixin hover {
+		transform: scale(1.03);
+		-webkit-transform: scale(1.03);
+		box-shadow: 0px 1px 0px 0px;
+		cursor: pointer;
+	}
+}

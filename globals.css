@@ -1,0 +1,14 @@
+:root {
+	--main-font: "Montserrat";
+	--theme-blue: #1d3557;
+	--theme-black: #000000;
+	--theme-gold: #ebb24c;
+	--theme-white: #ffffff;
+	--theme-gray: #e5e5e5;
+	font-weight: 300;
+}
+
+* {
+	font-family: Montserrat;
+	font-weight: 500;
+}

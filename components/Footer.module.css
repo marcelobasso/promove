@@ -1,0 +1,36 @@
+.footer {
+	background-color: var(--theme-gold);
+}
+
+.inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: var(--mantine-spacing-xl);
+	padding-bottom: var(--mantine-spacing-xl);
+
+	@media (max-width: $mantine-breakpoint-xs) {
+		flex-direction: column;
+	}
+}
+
+.links {
+	@media (max-width: $mantine-breakpoint-xs) {
+		margin-top: var(--mantine-spacing-md);
+	}
+}
+
+.flexContainer {
+	width: 100%;
+}
+
+.flexContainer span {
+	font-weight: 700;
+	color: var(--theme-blue);
+}
+
+.flexContainer a {
+	font-weight: 500;
+	font-size: 14px;
+	color: var(--theme-black);
+}

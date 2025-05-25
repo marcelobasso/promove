@@ -1,0 +1,61 @@
+#about {
+	background-color: var(--theme-gray);
+	padding: 72px 0;
+}
+
+.content {
+}
+
+.reverseText .name,
+.reverseText a {
+	text-align: right;
+}
+
+.teamText .name,
+.teamText a,
+.reverseText .name,
+.reverseText a {
+	@media (min-width: $mantine-breakpoint-xs) {
+		text-align: center;
+	}
+}
+
+.title {
+	text-align: left;
+	font-size: 32px;
+	font-weight: 700;
+	left: 16px;
+	width: 100%;
+}
+
+.description {
+	margin-bottom: 32px;
+}
+
+.teamCard {
+	margin: 16px 0;
+	width: 100%;
+	max-width: 480px;
+	background-color: var(--theme-gray);
+}
+
+.teamCard a {
+	text-decoration: none;
+	color: var(--theme-black);
+	transition: color 0.3s;
+
+	@mixin hover {
+		cursor: pointer;
+		color: var(--theme-gold);
+		text-decoration: underline;
+	}
+}
+
+.teamCard .name {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.teamContainer {
+	width: 100%;
+}
