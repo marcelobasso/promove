@@ -1,5 +1,3 @@
-// src/data/content.ts
-
 export const siteContent = {
 	banner: {
 		title: "PRO\nMO\nVE",
@@ -9,7 +7,7 @@ export const siteContent = {
 	},
 
 	about: {
-		title: "Quem\nSomos?",
+		title: "Quem\nsomos?",
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt eros at placerat fermentum. Curabitur nisi odio, porta ac egestas non, luctus id diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed placerat auctor tortor at cursus. Aenean at leo id nibh pulvinar egestas nec non erat. Nulla tincidunt suscipit risus sed rhoncus. Sed lacinia arcu nec porttitor mattis. Suspendisse imperdiet dolor sit amet magna congue, sed pharetra odio dictum. Nunc lacinia vulputate velit quis porttitor. Nunc interdum eget erat eget hendrerit.\n\nInteger quis ipsum porttitor, venenatis arcu at, varius eros. Duis sit amet ante vehicula, facilisis velit eget, ultrices sem. In sed pharetra orci. Vivamus maximus a mauris sit amet mollis. Integer a mi leo. Nunc id justo bibendum, auctor mi eu, rutrum urna. Ut consequat odio ligula, quis porttitor nisl facilisis quis.",
 		team: [
@@ -30,72 +28,82 @@ export const siteContent = {
 			},
 		],
 	},
-
 	events: {
-		title: "Próximos Eventos",
-		noEvents: "Nenhum evento agendado no momento. Fique ligado para as próximas novidades!",
-		viewDetails: "Ver Detalhes",
-		dateLabel: "Data",
-		locationLabel: "Local",
-		eventNotFound: "Evento não encontrado.",
-	},
-
-	eventList: [
-		// Example of event data, could be in a separate events.ts
-		{
-			id: "festival-inverno",
-			name: "Festival de Inverno Carlos Barbosa",
-			date: "15 MAI - 17 MAI",
-			time: "18:00h",
-			location: "Parque da Estação",
-			description: "Três dias de música, gastronomia e cultura local.",
-			image: "/images/events/festival.jpg",
-		},
-		{
-			id: "corrida-vinho",
-			name: "Corrida do Vinho Carlos Barbosa",
-			date: "22 JUN",
-			time: "08:00h",
-			location: "Centro Histórico",
-			description: "Corra pelas belas paisagens vinícolas da cidade.",
-			image: "/images/events/corrida.jpg",
-		},
-	],
-	sponsors: {
-		title: "Nossos Patrocinadores",
-		cta: "Seja um Patrocinador",
-		list: [
-			// Example sponsor list
+		title: "Diferentes\nformatos",
+		description:
+			"Confira os formatos que fazem a mágica acontecer! Cada tipo de evento tem uma proposta diferente — e todos têm uma coisa em comum: são feitos pra rir junto.",
+		subDescription: "Clique no evento e confira as últimas edições ;)",
+		events: [
 			{
-				name: "Sponsor A",
-				logo: "/images/sponsors/sponsorA.png",
-				link: "https://www.sponsorA.com",
+				name: "Comedy",
+				description:
+					"O Sunset Comedy é um show ao ar livre, feito pra curtir com os amigos, tomar uma bebida gelada e rir sem pressa enquanto o céu muda de cor. É comédia com clima de verão — mesmo que seja no inverno.",
+				link: "comedy",
+				image: "comedy.jpg",
+				imageAlt: "Show de stand up comedy.",
 			},
 			{
-				name: "Sponsor B",
-				logo: "/images/sponsors/sponsorB.png",
-				link: "https://www.sponsorB.com",
+				name: "Game Party",
+				description:
+					"O Sunset Comedy é um show ao ar livre, feito pra curtir com os amigos, tomar uma bebida gelada e rir sem pressa enquanto o céu muda de cor. É comédia com clima de verão — mesmo que seja no inverno.",
+				link: "game-party",
+				image: "game-party.jpg",
+				imageAlt: "Amigos em uma game party.",
+			},
+			{
+				name: "Ao ar livre",
+				description:
+					"O Sunset Comedy é um show ao ar livre, feito pra curtir com os amigos, tomar uma bebida gelada e rir sem pressa enquanto o céu muda de cor. É comédia com clima de verão — mesmo que seja no inverno.",
+				link: "outdoor",
+				image: "ar-livre.jpg",
+				imageAlt: "Evento ao ar livre no parque.",
 			},
 		],
 	},
-	contact: {
-		title: "Fale Conosco",
-		name: "Seu Nome Completo",
-		email: "Seu Email",
-		subject: "Assunto",
-		message: "Sua Mensagem",
-		send: "Enviar Mensagem",
-		phone: "Telefone:",
-		address: "Endereço:",
-		emailContact: "Email:",
-		successMessage: "Mensagem enviada com sucesso!",
-		errorMessage: "Erro ao enviar mensagem.",
+	sponsors: {
+		title: "Nossos\nApoiadores",
+		description:
+			"Nossos patrocinadores fazem parte desse show!\n\nObrigado a todas as marcas que apoiam a cultura e ajudam a manter vivos os novos eventos e programações em Carlos Barbosa.",
+		cta: "Seja um apoiador ;)",
+		sponsors: [
+			{
+				name: "Kafer Bebidas",
+				logo: "kafer-bebidas.jpg",
+				instagram: "@kaferbebidas",
+				link: "#",
+			},
+			{
+				name: "Hally Tascas",
+				logo: "hally-tascas.jpg",
+				instagram: "@hallytascas",
+				link: "#",
+			},
+			{
+				name: "Mundo Florescer",
+				logo: "mundo-florescer.jpg",
+				instagram: "@mundoflorescer",
+				link: "#",
+			},
+			{
+				name: "Renata Godoy",
+				logo: "renata-godoy.jpg",
+				instagram: "@renatagodoy",
+				link: "#",
+			},
+			{
+				name: "Santa Borda",
+				logo: "santa-borda.jpg",
+				instagram: "@quero_santaborda",
+				link: "#",
+			},
+		],
 	},
-	footer: {
-		copyright: "Todos os direitos reservados.",
+
+	// to-do: fix-email
+	contact: {
+		title: "Contato",
+		description: "Alô, produção!\n\nDúvidas, infos sobre ingressos ou parcerias? Estamos por aqui — respondemos rapidinho, juro.",
+		phone: "54 99637-2555",
+		email: "vinicius@gmail.com",
 	},
 };
-
-// If you prefer to export events separately:
-export const eventsData = siteContent.eventList;
-// Then remove eventList from siteContent and import eventsData where needed.

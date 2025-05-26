@@ -1,4 +1,3 @@
-"use client";
 import { Container, Anchor, Flex } from "@mantine/core";
 import classes from "./Footer.module.css";
 
@@ -20,13 +19,8 @@ const Footer = () => {
 	return (
 		<footer className={classes.footer}>
 			<Container className={classes.inner}>
-				<Flex className={classes.flexContainer} justify="space-between">
+				<Flex className={classes.flexContainer} justify="flex-end">
 					<span>PROMOVE</span>
-					{/* <Flex gap="md" className={classes.links}>
-						{items}
-					</Flex>
-				</Flex> */}
-					{/* to do: adicionar icones e links para redes socciais */}
 				</Flex>
 			</Container>
 		</footer>

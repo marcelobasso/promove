@@ -3,9 +3,6 @@
 	padding: 72px 0;
 }
 
-.content {
-}
-
 .reverseText .name,
 .reverseText a {
 	text-align: right;
@@ -22,8 +19,6 @@
 
 .title {
 	text-align: left;
-	font-size: 32px;
-	font-weight: 700;
 	left: 16px;
 	width: 100%;
 }
@@ -43,10 +38,12 @@
 	text-decoration: none;
 	color: var(--theme-black);
 	transition: color 0.3s;
+	font-size: 14px;
+	font-style: italic;
 
 	@mixin hover {
 		cursor: pointer;
-		color: var(--theme-gold);
+		color: var(--theme-blue);
 		text-decoration: underline;
 	}
 }

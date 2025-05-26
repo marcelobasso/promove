@@ -1,0 +1,25 @@
+#events {
+	background-color: var(--theme-blue);
+	padding: 64px 0;
+}
+
+.title {
+	text-align: right;
+	color: var(--theme-gray);
+	margin-bottom: 24px;
+}
+
+.description {
+	margin: 48px 0;
+	color: var(--theme-gray);
+}
+
+.eventSlide {
+	background-color: var(--theme-gray);
+	min-width: 60%;
+
+	@media (max-width: $mantine-breakpoint-sm) {
+		margin: auto 16px;
+		min-width: 90%;
+	}
+}

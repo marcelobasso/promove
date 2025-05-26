@@ -10,6 +10,10 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	@media (max-width: $mantine-breakpoint-sm) {
+		height: 100%;
+	}
 }
 
 .promove {
@@ -20,7 +24,7 @@
 	text-align: right;
 	font-size: 96px;
 	color: var(--theme-gold);
-	line-height: 120px;
+	line-height: 100px;
 	letter-spacing: 8px;
 }
 

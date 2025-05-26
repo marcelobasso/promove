@@ -10,6 +10,11 @@
 	z-index: 100;
 }
 
+.header a:hover {
+	background-color: var(--theme-gray);
+	color: var(--theme-blue);
+}
+
 .inner {
 	height: 56px;
 	display: flex;

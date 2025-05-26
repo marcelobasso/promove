@@ -1,0 +1,30 @@
+#sponsors {
+	background-color: var(--theme-gray);
+	padding: 64px 0;
+}
+
+.gridCol {
+	text-align: center;
+}
+
+.sponsorName {
+	text-decoration: none;
+	color: var(--theme-black);
+	font-weight: 700;
+	display: block;
+}
+
+.instagram {
+	text-decoration: none;
+	font-weight: 300;
+	color: var(--theme-black);
+}
+
+.sponsorName:hover,
+.instagram:hover {
+	text-decoration: underline;
+}
+
+.ctaSponsor:hover {
+	cursor: pointer;
+}

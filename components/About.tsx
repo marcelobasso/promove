@@ -1,4 +1,4 @@
-import { Container, Flex, Title, Text, Button, Image, useMantineTheme, Paper } from "@mantine/core";
+import { Container, Flex, Text, Image, useMantineTheme, Paper } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import classes from "./About.module.css";
 import { Fragment } from "react";
@@ -19,6 +19,15 @@ interface CardProps {
 	index: number;
 }
 
+function breakLine(text: string) {
+	return text.split("\n").map((line, index) => (
+		<Fragment key={index}>
+			{line}
+			<br />
+		</Fragment>
+	));
+}
+
 function Card({ name, instagram, image, index }: CardProps) {
 	const theme = useMantineTheme();
 	const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
@@ -32,13 +41,11 @@ function Card({ name, instagram, image, index }: CardProps) {
 						<div className={index % 2 == 0 ? classes.teamText : classes.reverseText}>
 							<Text className={classes.name}>{name}</Text>
 							<a href={"https://instagram.com/" + instagram.slice(1, instagram.length)} target="_blank">
-								<Text className={classes.insta} size="xs">
-									{instagram}
-								</Text>
+								<Text className={classes.insta}>{instagram}</Text>
 							</a>
 						</div>
 					</Flex>
-					<Image w={100} radius={100} src={`${image}`} />
+					<Image w={100} radius={100} src={image} />
 				</Flex>
 			</div>
 		</Paper>
@@ -54,22 +61,8 @@ const About = (props: AboutProps) => {
 		<section id={classes.about}>
 			<Container size="md" className={classes.content}>
 				<Flex justify="center" align="center" direction="column" mih={50}>
-					<h2 className={classes.title}>
-						{props.content.title.split("\n").map((line, index) => (
-							<Fragment key={index}>
-								{line}
-								<br />
-							</Fragment>
-						))}
-					</h2>
-					<p className={classes.description}>
-						{props.content.description.split("\n").map((line, index) => (
-							<Fragment key={index}>
-								{line}
-								<br />
-							</Fragment>
-						))}
-					</p>
+					<h2 className={classes.title}>{breakLine(props.content.title)}</h2>
+					<p className={classes.description}>{breakLine(props.content.description)}</p>
 
 					<Flex className={classes.teamContainer} justify="center" align="center" direction={mobile ? "column" : "row"} m={{ base: "sm", md: "xl" }}>
 						{team}

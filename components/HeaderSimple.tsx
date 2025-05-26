@@ -3,10 +3,10 @@
 import { useState } from "react";
 import { Burger, Container, Group } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { MantineLogo } from "@mantinex/mantine-logo";
 import classes from "./HeaderSimple.module.css";
 
 const links = [
+	{ link: "/home", label: "Home" },
 	{ link: "/quem-somos", label: "Quem Somos" },
 	{ link: "/eventos", label: "Eventos" },
 	{ link: "/patrocinadores", label: "Patrocinadores" },
