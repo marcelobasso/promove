@@ -26,6 +26,12 @@
 	color: var(--theme-gold);
 	line-height: 100px;
 	letter-spacing: 8px;
+
+	@media (max-width: $mantine-breakpoint-xs) {
+		font-size: 64px;
+		top: 32px;
+		line-height: 80px;
+	}
 }
 
 .box {

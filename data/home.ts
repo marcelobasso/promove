@@ -42,22 +42,6 @@ export const siteContent = {
 				image: "comedy.jpg",
 				imageAlt: "Show de stand up comedy.",
 			},
-			{
-				name: "Game Party",
-				description:
-					"O Sunset Comedy é um show ao ar livre, feito pra curtir com os amigos, tomar uma bebida gelada e rir sem pressa enquanto o céu muda de cor. É comédia com clima de verão — mesmo que seja no inverno.",
-				link: "game-party",
-				image: "game-party.jpg",
-				imageAlt: "Amigos em uma game party.",
-			},
-			{
-				name: "Ao ar livre",
-				description:
-					"O Sunset Comedy é um show ao ar livre, feito pra curtir com os amigos, tomar uma bebida gelada e rir sem pressa enquanto o céu muda de cor. É comédia com clima de verão — mesmo que seja no inverno.",
-				link: "outdoor",
-				image: "ar-livre.jpg",
-				imageAlt: "Evento ao ar livre no parque.",
-			},
 		],
 	},
 	sponsors: {
@@ -104,6 +88,6 @@ export const siteContent = {
 		title: "Entre em contato",
 		description: "Alô, produção!\n\nDúvidas, infos sobre ingressos ou parcerias? Estamos por aqui — respondemos rapidinho, juro.",
 		phone: "54 99637-2555",
-		email: "vinicius@gmail.com",
+		email: "contato@promovecb.com.br",
 	},
 };

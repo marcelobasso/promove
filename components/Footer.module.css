@@ -1,4 +1,5 @@
-.footer {
+#footer {
+	height: 56px;
 	background-color: var(--theme-gold);
 }
 
@@ -8,6 +9,9 @@
 	align-items: center;
 	padding-top: var(--mantine-spacing-xl);
 	padding-bottom: var(--mantine-spacing-xl);
+	margin: 0;
+	padding: 0;
+	height: 100%;
 
 	@media (max-width: $mantine-breakpoint-xs) {
 		flex-direction: column;

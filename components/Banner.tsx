@@ -30,7 +30,7 @@ export function Banner(props: BannerProps) {
 				</h1>
 				<Flex gap="md" justify="center" align="center" direction="column" wrap="wrap" className={classes.box}>
 					<p className={classes.subtitle}>{props.content.subtitle}</p>
-					<a style={{ textDecoration: "none" }} href={props.content.ctaLink}>
+					<a style={{ textDecoration: "none" }} href={props.content.ctaLink} target="_blank">
 						<Button color="var(--theme-gold)" className={classes.cta} variant="filled" size="md">
 							COMPRAR INGRESSOS
 						</Button>

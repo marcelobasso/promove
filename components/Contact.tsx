@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import { Button, Container, TextInput, Paper, Grid, Textarea } from "@mantine/core";
+import { Button, Container, TextInput, Paper, Grid, Textarea, Flex } from "@mantine/core";
 import { hasLength, isEmail, useForm } from "@mantine/form";
 import { useMediaQuery } from "@mantine/hooks";
 import classes from "./Contact.module.css";
@@ -41,28 +41,36 @@ const Contact = (props: ContactProps) => {
 				<h2 className={classes.title}>{props.title}</h2>
 				<p className={classes.description}>{breakLine(props.description)}</p>
 
-				<Grid grow w="100%" mt="xl" mb="xl" c="var(--theme-blue)" style={{ backgroundColor: "var(--theme-blue)" }}>
-					<Grid.Col className={classes.gridCol} span={mobile ? 12 : 5} style={{ order: mobile ? 2 : 1 }}>
-						<div>
-							<span className={classes.text}>Telefone: {props.phone}</span>
-							<span className={classes.text}>Email: {props.email}</span>
-						</div>
-					</Grid.Col>
-					<Grid.Col className={classes.gridCol} span={mobile ? 12 : 7} style={{ order: mobile ? 1 : 2, backgroundColor: "var(--theme-blue)" }}>
-						<Paper w="100%" p={24} maw={640} className={classes.formContainer} style={{ backgroundColor: "var(--theme-blue)" }}>
-							<form onSubmit={form.onSubmit(setSubmittedValues)}>
-								<TextInput {...form.getInputProps("name")} label="Seu nome completo" placeholder="seu nome..." />
-								<TextInput {...form.getInputProps("email")} mt="md" label="Seu Email" placeholder="email..." />
-								<TextInput {...form.getInputProps("assunto")} mt="md" label="Assunto" placeholder="assunto..." />
-								<Textarea {...form.getInputProps("mensagem")} mt="md" label="Mensagem" placeholder="mensagem..." />
+				<Flex w="100%" direction="column" align="center">
+					<Paper
+						w="100%"
+						p={24}
+						maw={640}
+						miw={{ base: 320, md: 400 }}
+						className={classes.formContainer}
+						style={{ backgroundColor: "var(--theme-blue)" }}
+					>
+						<form onSubmit={form.onSubmit(setSubmittedValues)}>
+							<TextInput {...form.getInputProps("name")} label="Seu nome completo" placeholder="seu nome..." />
+							<TextInput {...form.getInputProps("email")} mt="md" label="Seu Email" placeholder="email..." />
+							<TextInput {...form.getInputProps("assunto")} mt="md" label="Assunto" placeholder="assunto..." />
+							<Textarea {...form.getInputProps("mensagem")} mt="md" label="Mensagem" placeholder="mensagem..." />
 
-								<Button type="submit" mt="md" miw={160}>
-									ENVIAR
-								</Button>
-							</form>
-						</Paper>
-					</Grid.Col>
-				</Grid>
+							<Button type="submit" mt="md" miw={160}>
+								ENVIAR
+							</Button>
+						</form>
+					</Paper>
+
+					<Flex w="100%" direction="column" mt={64} align="start">
+						<span className={classes.text}>
+							<span style={{ fontWeight: 800 }}>Telefone:</span> {props.phone}
+						</span>
+						<span className={classes.text}>
+							<span style={{ fontWeight: 800 }}>Email:</span> {props.email}
+						</span>
+					</Flex>
+				</Flex>
 			</Container>{" "}
 		</section>
 	);

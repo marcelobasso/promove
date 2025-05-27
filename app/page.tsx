@@ -10,6 +10,7 @@ import Events from "@/components/Events";
 import Sponsors from "@/components/Sponsors";
 import Contact from "@/components/Contact";
 import { HeaderSimple } from "@/components/HeaderSimple";
+import Footer from "@/components/Footer";
 
 const Home = () => {
 	const { about, banner, events, sponsors, contact } = siteContent;

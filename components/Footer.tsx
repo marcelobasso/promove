@@ -17,7 +17,7 @@ const Footer = () => {
 	));
 
 	return (
-		<footer className={classes.footer}>
+		<footer id={classes.footer}>
 			<Container className={classes.inner}>
 				<Flex className={classes.flexContainer} justify="flex-end">
 					<span>PROMOVE</span>
