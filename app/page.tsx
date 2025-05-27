@@ -34,7 +34,7 @@ const Home = () => {
 	// prettier-ignore
 	return (
 		<Suspense>
-            <HeaderSimple scroll={scroll} />
+            <HeaderSimple scroll={scroll} links={true} />
 			<div ref={bannerRef} style={{ scrollMarginTop: "56px" }}><Banner content={banner} /></div>
 			<div ref={aboutRef} style={{ scrollMarginTop: "56px" }}><About content={about} /></div>
 			<div ref={eventsRef} style={{ scrollMarginTop: "56px"  }}><Events {...events} /></div>

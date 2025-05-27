@@ -4,6 +4,7 @@ import classes from "./Events.module.css";
 import { Carousel } from "@mantine/carousel";
 import "@mantine/carousel/styles.css";
 import { Fragment } from "react";
+import Link from "next/link";
 
 interface Event {
 	name: string;
@@ -38,7 +39,8 @@ function EventSlide(props: EventSlideProps) {
 	const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
 
 	return (
-		<Card className={classes.eventSlide} shadow="sm" padding="xl" m="16px" mb="48px" component="a" href={`/event/${props.event.link}`} target="_blank">
+		<Card className={classes.eventSlide} shadow="sm" padding="xl" m="16px" mb="48px">
+			{/* <Link href={`/events/${props.event.link}`} style={{ textDecoration: "none", color: "var(--theme-black)" }}> */}
 			<Card.Section>
 				<Image src={`/assets/events/${props.event.image}`} alt={props.event.imageAlt} h={320} />
 			</Card.Section>
@@ -50,6 +52,7 @@ function EventSlide(props: EventSlideProps) {
 			<Text mt="xs" c="gray.8" size="sm">
 				{props.event.description}
 			</Text>
+			{/* </Link> */}
 		</Card>
 	);
 }

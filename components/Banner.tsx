@@ -2,6 +2,7 @@ import { Container, Button, Flex } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./Banner.module.css";
 import { Fragment } from "react";
+import Link from "next/link";
 
 interface BannerProps {
 	content: {
@@ -29,9 +30,11 @@ export function Banner(props: BannerProps) {
 				</h1>
 				<Flex gap="md" justify="center" align="center" direction="column" wrap="wrap" className={classes.box}>
 					<p className={classes.subtitle}>{props.content.subtitle}</p>
-					<Button className={classes.cta} variant="filled" size="md">
-						COMPRAR INGRESSOS
-					</Button>
+					<a style={{ textDecoration: "none" }} href={props.content.ctaLink}>
+						<Button color="var(--theme-gold)" className={classes.cta} variant="filled" size="md">
+							COMPRAR INGRESSOS
+						</Button>
+					</a>
 				</Flex>
 			</Container>
 		</section>

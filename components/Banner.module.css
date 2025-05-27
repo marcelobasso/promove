@@ -43,7 +43,6 @@
 }
 
 .cta {
-	background-color: var(--theme-gold);
 	color: var(--theme-black);
 	font-weight: 700;
 	transition: all 1s;

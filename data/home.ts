@@ -3,7 +3,7 @@ export const siteContent = {
 		title: "PRO\nMO\nVE",
 		subtitle: "Sua Plataforma de Eventos em Carlos Barbosa",
 		cta: "Comprar ingressos",
-		ctaLink: "",
+		ctaLink: "https://www.sympla.com.br/evento/arraia-comedy-carlos-barbosa/2952520",
 	},
 
 	about: {

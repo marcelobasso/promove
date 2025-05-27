@@ -58,7 +58,7 @@ const About = (props: AboutProps) => {
 
 	return (
 		<section id={classes.about}>
-			<Container size="md" p={{ base: "xl", sm: "" }} className={classes.content}>
+			<Container size="md" p={{ base: "xl", sm: "sm" }} className={classes.content}>
 				<Flex justify="center" align="center" direction="column" mih={50}>
 					<h2 className={classes.title}>{breakLine(props.content.title)}</h2>
 					<p className={classes.description} dangerouslySetInnerHTML={{ __html: props.content.description }}></p>

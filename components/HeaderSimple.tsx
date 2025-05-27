@@ -12,6 +12,7 @@ const links = [
 
 interface HeaderInterface {
 	scroll: Function;
+	links: boolean;
 }
 
 export function HeaderSimple(props: HeaderInterface) {
@@ -33,11 +34,18 @@ export function HeaderSimple(props: HeaderInterface) {
 	return (
 		<header className={classes.header}>
 			<Container size="md" className={classes.inner}>
-				<Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
+				<Burger
+					style={{ display: props.links ? "block" : "none" }}
+					color="var(--theme-gold)"
+					opened={opened}
+					onClick={toggle}
+					hiddenFrom="xs"
+					size="sm"
+				/>
 				<span className={classes.promove}>PROMOVE</span>
 
 				{/* Desktop menu */}
-				<Group gap={5} visibleFrom="xs">
+				<Group style={{ display: props.links ? "flex" : "none" }} gap={5} visibleFrom="xs">
 					{items}
 				</Group>
 			</Container>

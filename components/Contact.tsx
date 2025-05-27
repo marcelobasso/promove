@@ -37,19 +37,19 @@ const Contact = (props: ContactProps) => {
 
 	return (
 		<section id={classes.contact}>
-			<Container size="md" className={classes.contactContainer}>
+			<Container c="var(--theme-blue)" size="md" className={classes.contactContainer}>
 				<h2 className={classes.title}>{props.title}</h2>
 				<p className={classes.description}>{breakLine(props.description)}</p>
 
-				<Grid grow w="100%" mt="xl" mb="xl">
+				<Grid grow w="100%" mt="xl" mb="xl" c="var(--theme-blue)" style={{ backgroundColor: "var(--theme-blue)" }}>
 					<Grid.Col className={classes.gridCol} span={mobile ? 12 : 5} style={{ order: mobile ? 2 : 1 }}>
 						<div>
 							<span className={classes.text}>Telefone: {props.phone}</span>
 							<span className={classes.text}>Email: {props.email}</span>
 						</div>
 					</Grid.Col>
-					<Grid.Col className={classes.gridCol} span={mobile ? 12 : 7} style={{ order: mobile ? 1 : 2 }}>
-						<Paper w="100%" p={24} maw={640} className={classes.formContainer}>
+					<Grid.Col className={classes.gridCol} span={mobile ? 12 : 7} style={{ order: mobile ? 1 : 2, backgroundColor: "var(--theme-blue)" }}>
+						<Paper w="100%" p={24} maw={640} className={classes.formContainer} style={{ backgroundColor: "var(--theme-blue)" }}>
 							<form onSubmit={form.onSubmit(setSubmittedValues)}>
 								<TextInput {...form.getInputProps("name")} label="Seu nome completo" placeholder="seu nome..." />
 								<TextInput {...form.getInputProps("email")} mt="md" label="Seu Email" placeholder="email..." />
@@ -59,12 +59,6 @@ const Contact = (props: ContactProps) => {
 								<Button type="submit" mt="md" miw={160}>
 									ENVIAR
 								</Button>
-
-								{/* <Text mt="md">Form values:</Text> */}
-								{/* <Code block>{JSON.stringify(form.values, null, 2)}</Code> */}
-
-								{/* <Text mt="md">Submitted values:</Text> */}
-								{/* <Code block>{submittedValues ? JSON.stringify(submittedValues, null, 2) : "–"}</Code> */}
 							</form>
 						</Paper>
 					</Grid.Col>
