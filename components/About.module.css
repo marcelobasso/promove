@@ -1,5 +1,10 @@
 #about {
 	background-color: var(--theme-gray);
+	padding: 64px 0;
+
+	@media (max-width: $mantine-breakpoint-xs) {
+		padding: 32px 0;
+	}
 }
 
 .reverseText .name,
@@ -56,16 +61,4 @@
 .teamContainer {
 	width: 100%;
 	background-color: var(--theme-gray);
-}
-
-.teamCardImage {
-	width: 160px;
-
-	@media (min-width: 360px) {
-		width: 80px;
-	}
-
-	@media (min-width: 400px) {
-		width: 100px;
-	}
 }

@@ -37,11 +37,3 @@
 .ctaSponsor:hover {
 	cursor: pointer;
 }
-
-.sponsorImage {
-	width: 100px;
-
-	@media (min-width: 360px) {
-		width: 64px;
-	}
-}

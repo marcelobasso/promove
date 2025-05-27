@@ -33,7 +33,7 @@ function Card({ name, instagram, image, index }: CardProps) {
 	const cardAlignment = mobile ? (index % 2 == 0 ? "row" : "row-reverse") : "column-reverse";
 
 	return (
-		<Paper withBorder={false} p={{ base: "md", xs: "" }} radius="sm" bg="var(--theme-gray)" className={classes.teamCard}>
+		<Paper withBorder={false} p={{ base: 0, sm: "md", md: "xl" }} radius="sm" bg="var(--theme-gray)" className={classes.teamCard}>
 			<div>
 				<Flex direction={cardAlignment} align="center" justify="space-between">
 					<Flex align="start" p="md">
@@ -44,7 +44,7 @@ function Card({ name, instagram, image, index }: CardProps) {
 							</a>
 						</div>
 					</Flex>
-					<Image className={classes.teamCardImage} radius={100} src={`/assets/about/${image}`} />
+					<Image w={{ base: 100, sm: 120, md: 160 }} radius={100} src={`/assets/about/${image}`} />
 				</Flex>
 			</div>
 		</Paper>
