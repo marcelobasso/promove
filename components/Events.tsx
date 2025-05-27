@@ -38,7 +38,7 @@ function EventSlide(props: EventSlideProps) {
 	const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
 
 	return (
-		<Card className={classes.eventSlide} shadow="sm" padding="xl" m="16px" mb="48px" component="a" href={`/event/ + ${props.event.link}`} target="_blank">
+		<Card className={classes.eventSlide} shadow="sm" padding="xl" m="16px" mb="48px" component="a" href={`/event/${props.event.link}`} target="_blank">
 			<Card.Section>
 				<Image src={`/assets/events/${props.event.image}`} alt={props.event.imageAlt} h={320} />
 			</Card.Section>

@@ -38,7 +38,7 @@ function Card(props: SponsorCardProp) {
 
 	return (
 		<Grid.Col className={classes.gridCol} span={mobile ? 6 : 2} mt="xl">
-			<Image w={{ base: 64, sm: 80, md: 100 }} className={classes.sponsorImage} m="0 auto" radius={100} src={`/assets/sponsors/${props.sponsor.logo}`} />
+			<Image w={{ base: 80, md: 100 }} className={classes.sponsorImage} m="0 auto" radius={100} src={`/assets/sponsors/${props.sponsor.logo}`} />
 			<Text mt="md">
 				<a target="_blank" className={classes.sponsorName} href={props.sponsor.link}>
 					{props.sponsor.name}
