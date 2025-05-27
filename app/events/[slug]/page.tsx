@@ -12,7 +12,7 @@ export default function EventPage() {
 
 	return (
 		<>
-			<HeaderSimple scroll={(a) => null} links={false} />
+			<HeaderSimple scroll={() => null} links={false} />
 			<section id={classes.event}>
 				<Container size="sm" mt="56px" pt={64} pb={64}>
 					<h1>Evento: {slug}</h1>
