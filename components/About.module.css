@@ -1,6 +1,5 @@
 #about {
 	background-color: var(--theme-gray);
-	padding: 72px 0;
 }
 
 .reverseText .name,
@@ -43,6 +42,10 @@
 		color: var(--theme-blue);
 		text-decoration: underline;
 	}
+
+	@media (max-width: 480px) {
+		font-size: 14px;
+	}
 }
 
 .teamCard .name {
@@ -53,4 +56,16 @@
 .teamContainer {
 	width: 100%;
 	background-color: var(--theme-gray);
+}
+
+.teamCardImage {
+	width: 160px;
+
+	@media (min-width: 360px) {
+		width: 80px;
+	}
+
+	@media (min-width: 400px) {
+		width: 100px;
+	}
 }

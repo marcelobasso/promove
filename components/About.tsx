@@ -33,7 +33,7 @@ function Card({ name, instagram, image, index }: CardProps) {
 	const cardAlignment = mobile ? (index % 2 == 0 ? "row" : "row-reverse") : "column-reverse";
 
 	return (
-		<Paper withBorder={false} p="sm" pr="xl" pl="xl" radius="sm" bg="var(--theme-gray)" className={classes.teamCard}>
+		<Paper withBorder={false} p={{ base: "md", xs: "" }} radius="sm" bg="var(--theme-gray)" className={classes.teamCard}>
 			<div>
 				<Flex direction={cardAlignment} align="center" justify="space-between">
 					<Flex align="start" p="md">
@@ -44,7 +44,7 @@ function Card({ name, instagram, image, index }: CardProps) {
 							</a>
 						</div>
 					</Flex>
-					<Image w={mobile ? 100 : 160} radius={100} src={`/assets/about/${image}`} />
+					<Image className={classes.teamCardImage} radius={100} src={`/assets/about/${image}`} />
 				</Flex>
 			</div>
 		</Paper>
@@ -58,7 +58,7 @@ const About = (props: AboutProps) => {
 
 	return (
 		<section id={classes.about}>
-			<Container size="md" className={classes.content}>
+			<Container size="md" p={{ base: "xl", sm: "" }} className={classes.content}>
 				<Flex justify="center" align="center" direction="column" mih={50}>
 					<h2 className={classes.title}>{breakLine(props.content.title)}</h2>
 					<p className={classes.description} dangerouslySetInnerHTML={{ __html: props.content.description }}></p>

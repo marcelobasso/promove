@@ -18,6 +18,7 @@ interface EventsProps {
 	description: string;
 	subDescription: string;
 	events: Event[];
+	scroll: Function;
 }
 
 interface EventSlideProps {

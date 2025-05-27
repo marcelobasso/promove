@@ -12,6 +12,10 @@
 	color: var(--theme-black);
 	font-weight: 700;
 	display: block;
+
+	@media (max-width: 480px) {
+		font-size: 14px;
+	}
 }
 
 .instagram {
@@ -19,6 +23,10 @@
 	font-style: italic;
 	font-weight: 300;
 	color: var(--theme-black);
+
+	@media (max-width: 480px) {
+		font-size: 12px;
+	}
 }
 
 .sponsorName:hover,
@@ -28,4 +36,12 @@
 
 .ctaSponsor:hover {
 	cursor: pointer;
+}
+
+.sponsorImage {
+	width: 100px;
+
+	@media (min-width: 360px) {
+		width: 64px;
+	}
 }

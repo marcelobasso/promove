@@ -1,6 +1,10 @@
 #events {
 	background-color: var(--theme-blue);
 	padding: 64px 0;
+
+	@media (max-width: $mantine-breakpoint-sm) {
+		padding: 32px 0;
+	}
 }
 
 .title {
