@@ -33,7 +33,7 @@ function Card({ name, instagram, image, index }: CardProps) {
 	const cardAlignment = mobile ? (index % 2 == 0 ? "row" : "row-reverse") : "column-reverse";
 
 	return (
-		<Paper withBorder={false} p="sm" pr="xl" pl="xl" radius="sm" className={classes.teamCard}>
+		<Paper withBorder={false} p="sm" pr="xl" pl="xl" radius="sm" bg="var(--theme-gray)" className={classes.teamCard}>
 			<div>
 				<Flex direction={cardAlignment} align="center" justify="space-between">
 					<Flex align="start" p="md">
