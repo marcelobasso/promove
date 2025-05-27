@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import { Button, Text, Code, Container, Flex, TextInput, Group, Paper, Grid, Textarea } from "@mantine/core";
+import { Button, Container, TextInput, Paper, Grid, Textarea } from "@mantine/core";
 import { hasLength, isEmail, useForm } from "@mantine/form";
 import { useMediaQuery } from "@mantine/hooks";
 import classes from "./Contact.module.css";
@@ -26,7 +26,6 @@ const Contact = (props: ContactProps) => {
 	const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
 
 	const form = useForm({
-		mode: "controlled",
 		initialValues: { name: "", email: "" },
 		validate: {
 			name: hasLength({ min: 5 }, "Deve ter ao menos 5 caracteres."),
