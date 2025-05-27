@@ -20,12 +20,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 		<html lang="en">
 			<head>
 				<script src="//my.visme.co/visme-embed.js" />
+				<link rel="icon" href="/assets/logos/favicon.svg" sizes="any" />
 				<ColorSchemeScript />
 			</head>
 
 			<body className={font.className}>
 				<MantineProvider>
-					<HeaderSimple />
 					{children}
 					<Footer />
 				</MantineProvider>

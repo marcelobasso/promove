@@ -10,7 +10,6 @@ interface BannerProps {
 		cta: string;
 		ctaLink: string;
 	};
-	scroll: Function;
 }
 
 // to-do: buscar imagens automaticamente em assets/banner_images.

@@ -8,10 +8,8 @@
 	text-align: right;
 }
 
-.teamText .name,
-.teamText a,
-.reverseText .name,
-.reverseText a {
+.teamText,
+.reverseText {
 	@media (min-width: $mantine-breakpoint-xs) {
 		text-align: center;
 	}
@@ -38,8 +36,8 @@
 	text-decoration: none;
 	color: var(--theme-black);
 	transition: color 0.3s;
-	font-size: 14px;
 	font-style: italic;
+	font-weight: 300;
 
 	@mixin hover {
 		cursor: pointer;

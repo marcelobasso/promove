@@ -35,14 +35,31 @@
 	@mixin hover {
 		background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
 	}
-
-	[data-mantine-color-scheme] &[data-active] {
-		background-color: var(--mantine-color-blue-filled);
-		color: var(--mantine-color-gray);
-	}
 }
 
 .promove {
 	color: var(--theme-gold);
 	font-weight: bolder;
+}
+
+.dropdown {
+	position: absolute;
+	top: 56px; /* Adjust based on your header height */
+	left: 0;
+	right: 0;
+	width: 50%;
+	background-color: var(--theme-gray);
+	z-index: 999;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.dropdown a {
+	color: var(--theme-black);
+}
+
+.header a:hover {
+	cursor: pointer;
 }

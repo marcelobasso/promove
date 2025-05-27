@@ -1,31 +1,29 @@
-"use client";
-
-import { useState } from "react";
-import { Burger, Container, Group } from "@mantine/core";
+import { Burger, Container, Group, Paper, Transition } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./HeaderSimple.module.css";
 
 const links = [
-	{ link: "/home", label: "Home" },
-	{ link: "/quem-somos", label: "Quem Somos" },
-	{ link: "/eventos", label: "Eventos" },
-	{ link: "/patrocinadores", label: "Patrocinadores" },
-	{ link: "/contato", label: "Contato" },
+	{ link: "banner", label: "Home" },
+	{ link: "about", label: "Quem Somos" },
+	{ link: "events", label: "Eventos" },
+	{ link: "sponsors", label: "Apoiadores" },
+	{ link: "contact", label: "Contato" },
 ];
 
-export function HeaderSimple() {
+interface HeaderInterface {
+	scroll: Function;
+}
+
+export function HeaderSimple(props: HeaderInterface) {
 	const [opened, { toggle }] = useDisclosure(false);
-	const [active, setActive] = useState(links[0].link);
 
 	const items = links.map((link) => (
 		<a
 			key={link.label}
-			href={link.link}
 			className={classes.link}
-			data-active={active === link.link || undefined}
-			onClick={(event) => {
-				event.preventDefault();
-				setActive(link.link);
+			onClick={(_) => {
+				props.scroll(link.link);
+				toggle();
 			}}
 		>
 			{link.label}
@@ -38,10 +36,20 @@ export function HeaderSimple() {
 				<Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
 				<span className={classes.promove}>PROMOVE</span>
 
+				{/* Desktop menu */}
 				<Group gap={5} visibleFrom="xs">
 					{items}
 				</Group>
 			</Container>
+
+			{/* Mobile menu */}
+			<Transition transition="slide-right" duration={200} mounted={opened}>
+				{(styles) => (
+					<Paper className={classes.dropdown} withBorder style={styles} hiddenFrom="xs">
+						{items}
+					</Paper>
+				)}
+			</Transition>
 		</header>
 	);
 }

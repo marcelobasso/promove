@@ -9,7 +9,6 @@ interface AboutProps {
 		description: string;
 		team: { name: string; instagram: string; image: string }[];
 	};
-	scroll: Function;
 }
 
 interface CardProps {
@@ -41,11 +40,11 @@ function Card({ name, instagram, image, index }: CardProps) {
 						<div className={index % 2 == 0 ? classes.teamText : classes.reverseText}>
 							<Text className={classes.name}>{name}</Text>
 							<a href={"https://instagram.com/" + instagram.slice(1, instagram.length)} target="_blank">
-								<Text className={classes.insta}>{instagram}</Text>
+								{instagram}
 							</a>
 						</div>
 					</Flex>
-					<Image w={100} radius={100} src={image} />
+					<Image w={mobile ? 100 : 160} radius={100} src={`/assets/about/${image}`} />
 				</Flex>
 			</div>
 		</Paper>
@@ -62,7 +61,7 @@ const About = (props: AboutProps) => {
 			<Container size="md" className={classes.content}>
 				<Flex justify="center" align="center" direction="column" mih={50}>
 					<h2 className={classes.title}>{breakLine(props.content.title)}</h2>
-					<p className={classes.description}>{breakLine(props.content.description)}</p>
+					<p className={classes.description} dangerouslySetInnerHTML={{ __html: props.content.description }}></p>
 
 					<Flex className={classes.teamContainer} justify="center" align="center" direction={mobile ? "column" : "row"} m={{ base: "sm", md: "xl" }}>
 						{team}

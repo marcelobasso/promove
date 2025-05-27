@@ -16,6 +16,7 @@
 
 .instagram {
 	text-decoration: none;
+	font-style: italic;
 	font-weight: 300;
 	color: var(--theme-black);
 }

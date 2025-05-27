@@ -37,13 +37,17 @@ function Card(props: SponsorCardProp) {
 	const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
 
 	return (
-		<Grid.Col className={classes.gridCol} span={mobile ? 6 : 4} mt="xl">
+		<Grid.Col className={classes.gridCol} span={mobile ? 6 : 2} mt="xl">
 			<Image m="0 auto" w={100} radius={100} src={`/assets/sponsors/${props.sponsor.logo}`} />
 			<Text mt="md">
-				<a className={classes.sponsorName} href={props.sponsor.link}>
+				<a target="_blank" className={classes.sponsorName} href={props.sponsor.link}>
 					{props.sponsor.name}
 				</a>
-				<a className={classes.instagram} href={`https://instagram.com/${props.sponsor.instagram.slice(1, props.sponsor.instagram.length)}`}>
+				<a
+					target="_blank"
+					className={classes.instagram}
+					href={`https://instagram.com/${props.sponsor.instagram.slice(1, props.sponsor.instagram.length)}`}
+				>
 					{props.sponsor.instagram}
 				</a>
 			</Text>
@@ -67,7 +71,7 @@ const Sponsors = (props: SponsorProps) => {
 						{sponsors}
 					</Grid>
 
-					<Text fs="14px" td="underline" m="xl" className={classes.ctaSponsor}>
+					<Text fs="14px" td="underline" m="xl" className={classes.ctaSponsor} onClick={() => props.scroll("contact")}>
 						{props.cta}
 					</Text>
 				</Flex>

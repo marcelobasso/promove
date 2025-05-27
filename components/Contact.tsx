@@ -10,7 +10,6 @@ interface ContactProps {
 	description: string;
 	phone: string;
 	email: string;
-	scroll: Function;
 }
 
 function breakLine(text: string) {
@@ -59,7 +58,7 @@ const Contact = (props: ContactProps) => {
 								<Textarea {...form.getInputProps("mensagem")} mt="md" label="Mensagem" placeholder="mensagem..." />
 
 								<Button type="submit" mt="md" miw={160}>
-									Enviar
+									ENVIAR
 								</Button>
 
 								{/* <Text mt="md">Form values:</Text> */}

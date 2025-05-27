@@ -7,24 +7,24 @@ export const siteContent = {
 	},
 
 	about: {
-		title: "Quem\nsomos?",
+		title: '"O que falta em Carlos Barbosa?"',
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt eros at placerat fermentum. Curabitur nisi odio, porta ac egestas non, luctus id diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed placerat auctor tortor at cursus. Aenean at leo id nibh pulvinar egestas nec non erat. Nulla tincidunt suscipit risus sed rhoncus. Sed lacinia arcu nec porttitor mattis. Suspendisse imperdiet dolor sit amet magna congue, sed pharetra odio dictum. Nunc lacinia vulputate velit quis porttitor. Nunc interdum eget erat eget hendrerit.\n\nInteger quis ipsum porttitor, venenatis arcu at, varius eros. Duis sit amet ante vehicula, facilisis velit eget, ultrices sem. In sed pharetra orci. Vivamus maximus a mauris sit amet mollis. Integer a mi leo. Nunc id justo bibendum, auctor mi eu, rutrum urna. Ut consequat odio ligula, quis porttitor nisl facilisis quis.",
+			"Foi essa pergunta, feita entre três amigos em uma roda de conversa, que deu início à Promove.<br/><br/>Mas afinal, o que é que falta? Numa cidade do interior, cheia de tradições e de gente conectada, entendemos que momentos que celebram essa união nunca são demais.<br/><br/>E é exatamente isso que a Promove quer oferecer: encontros que aproximam, experiências que viram lembranças, e oportunidades de estar ao lado de quem a gente mais ama.<br/><br/><span style='font-weight:700;'>Se antes faltava, agora não falta mais.</span>",
 		team: [
 			{
 				name: "Vinícius Audibert",
 				instagram: "@vini_audibert",
-				image: "assets/quem-somos/vinicius.jpg",
+				image: "vinicius-md-white.jpg",
 			},
 			{
 				name: "Matheus Patzlaff",
 				instagram: "@matheus_patzlaff",
-				image: "assets/quem-somos/matheus.jpg",
+				image: "matheus-md-white.jpg",
 			},
 			{
-				name: "Antonio",
+				name: "Antonio Candaten",
 				instagram: "@antonio_pwb",
-				image: "assets/quem-somos/vinicius.jpg",
+				image: "antonio-md-white.jpg",
 			},
 		],
 	},
@@ -87,7 +87,7 @@ export const siteContent = {
 			{
 				name: "Renata Godoy",
 				logo: "renata-godoy.jpg",
-				instagram: "@renatagodoy",
+				instagram: "@renatagodoyconfeitaria",
 				link: "#",
 			},
 			{
@@ -101,7 +101,7 @@ export const siteContent = {
 
 	// to-do: fix-email
 	contact: {
-		title: "Contato",
+		title: "Entre em contato",
 		description: "Alô, produção!\n\nDúvidas, infos sobre ingressos ou parcerias? Estamos por aqui — respondemos rapidinho, juro.",
 		phone: "54 99637-2555",
 		email: "vinicius@gmail.com",
