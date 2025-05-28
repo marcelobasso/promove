@@ -32,7 +32,7 @@ export function Banner(props: BannerProps) {
 					<p className={classes.subtitle}>{props.content.subtitle}</p>
 					<a style={{ textDecoration: "none" }} href={props.content.ctaLink} target="_blank">
 						<Button color="var(--theme-gold)" className={classes.cta} variant="filled" size="md">
-							COMPRAR INGRESSOS
+							<span style={{ color: "var(--theme-black)" }}>COMPRAR INGRESSOS</span>
 						</Button>
 					</a>
 				</Flex>

@@ -31,13 +31,13 @@ export const siteContent = {
 	events: {
 		title: "Diferentes\nformatos",
 		description:
-			"Confira os formatos que fazem a mágica acontecer! Cada tipo de evento tem uma proposta diferente — e todos têm uma coisa em comum: são feitos pra rir junto.",
+			"Confira os formatos que fazem a mágica acontecer! \n\nCada tipo de evento tem uma proposta diferente — e todos têm uma coisa em comum: vão ficar marcados pra sempre na sua memória.",
 		subDescription: "Clique no evento e confira as últimas edições ;)",
 		events: [
 			{
 				name: "Comedy",
 				description:
-					"O Sunset Comedy é um show ao ar livre, feito pra curtir com os amigos, tomar uma bebida gelada e rir sem pressa enquanto o céu muda de cor. É comédia com clima de verão — mesmo que seja no inverno.",
+					"Formato ideal pra quem quer rir sem enrolação. O Comedy é um show de stand-up rápido, direto e eficiente! A proposta é simples — humor de qualidade, clima descontraído e estrutura leve, que se adapta a bares, pubs e espaços culturais.",
 				link: "comedy",
 				image: "comedy.jpg",
 				imageAlt: "Show de stand up comedy.",

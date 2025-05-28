@@ -23,7 +23,9 @@
 		"next": "^15.1.7",
 		"prettier": "^3.5.2",
 		"react": "^19.0.0",
-		"react-dom": "^19.0.0"
+		"react-dom": "^19.0.0",
+		"resend": "^4.5.1",
+		"vercel": "^42.2.0"
 	},
 	"devDependencies": {
 		"@types/node": "^20",

@@ -2,6 +2,15 @@
 	background-color: var(--theme-blue);
 	height: calc(100vh - 56px);
 	margin-top: 56px;
+
+	background-image: url("/assets/banner/banner.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	@media (max-width: $mantine-breakpoint-sm) {
+		background-image: url("/assets/banner/banner-mobile.jpg");
+	}
 }
 
 .banner {
@@ -23,14 +32,16 @@
 	font-weight: 700;
 	text-align: right;
 	font-size: 96px;
-	color: var(--theme-gold);
+	/* color: var(--theme-gold); */
+	color: var(--theme-black);
 	line-height: 100px;
 	letter-spacing: 8px;
+	display: none;
 
 	@media (max-width: $mantine-breakpoint-xs) {
 		font-size: 64px;
 		top: 32px;
-		line-height: 80px;
+		line-height: 64px;
 	}
 }
 
@@ -45,11 +56,16 @@
 }
 
 .subtitle {
-	color: var(--theme-gray);
+	color: var(--theme-black);
+	display: none;
+
+	/* @media (max-width: $mantine-breakpoint-xs) { */
+	/* display: none; */
+	/* } */
 }
 
 .cta {
-	color: var(--theme-black);
+	/* color: var(--theme-black); */
 	font-weight: 700;
 	transition: all 1s;
 

@@ -18,8 +18,8 @@ const Footer = () => {
 
 	return (
 		<footer id={classes.footer}>
-			<Container className={classes.inner}>
-				<Flex className={classes.flexContainer} justify="flex-end">
+			<Container className={classes.inner} h="100%">
+				<Flex h="100%" className={classes.flexContainer} justify="flex-end" align="center">
 					<span>PROMOVE</span>
 				</Flex>
 			</Container>

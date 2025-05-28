@@ -4,6 +4,7 @@ import { hasLength, isEmail, useForm } from "@mantine/form";
 import { useMediaQuery } from "@mantine/hooks";
 import classes from "./Contact.module.css";
 import { useMantineTheme } from "@mantine/core";
+import { sendEmail } from "@/lib/resend";
 
 interface ContactProps {
 	title: string;
@@ -21,6 +22,11 @@ function breakLine(text: string) {
 	));
 }
 
+const Send = () => {
+	// sendEmail();
+	// console.log("send");
+};
+
 const Contact = (props: ContactProps) => {
 	const theme = useMantineTheme();
 	const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
@@ -32,8 +38,6 @@ const Contact = (props: ContactProps) => {
 			email: isEmail("Email inválido"),
 		},
 	});
-
-	const [submittedValues, setSubmittedValues] = useState<typeof form.values | null>(null);
 
 	return (
 		<section id={classes.contact}>
@@ -50,7 +54,7 @@ const Contact = (props: ContactProps) => {
 						className={classes.formContainer}
 						style={{ backgroundColor: "var(--theme-blue)" }}
 					>
-						<form onSubmit={form.onSubmit(setSubmittedValues)}>
+						<form action={Send}>
 							<TextInput {...form.getInputProps("name")} label="Seu nome completo" placeholder="seu nome..." />
 							<TextInput {...form.getInputProps("email")} mt="md" label="Seu Email" placeholder="email..." />
 							<TextInput {...form.getInputProps("assunto")} mt="md" label="Assunto" placeholder="assunto..." />
