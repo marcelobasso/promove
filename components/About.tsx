@@ -1,7 +1,8 @@
-import { Container, Flex, Text, Image, useMantineTheme, Paper } from "@mantine/core";
+import { Container, Flex, Text, Image, useMantineTheme, Paper, Center } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import classes from "./About.module.css";
 import { Fragment } from "react";
+import { FiInstagram } from "react-icons/fi";
 
 interface AboutProps {
 	content: {
@@ -39,12 +40,20 @@ function Card({ name, instagram, image, index }: CardProps) {
 					<Flex align="start" p="md">
 						<div className={index % 2 == 0 ? classes.teamText : classes.reverseText}>
 							<Text className={classes.name}>{name}</Text>
-							<a href={"https://instagram.com/" + instagram.slice(1, instagram.length)} target="_blank">
+							<a
+								style={{ display: "flex", alignItems: "center" }}
+								href={"https://instagram.com/" + instagram.slice(1, instagram.length)}
+								target="_blank"
+								className={classes.instaLink}
+							>
 								{instagram}
+								<FiInstagram style={{ lineHeight: 16, marginLeft: 8 }} />
 							</a>
 						</div>
 					</Flex>
-					<Image w={{ base: 100, sm: 120, md: 160 }} radius={100} src={`/assets/about/${image}`} />
+					<a href={"https://instagram.com/" + instagram.slice(1, instagram.length)} target="_blank">
+						<Image w={{ base: 100, sm: 120, md: 160 }} radius={100} src={`/assets/about/${image}`} />
+					</a>
 				</Flex>
 			</div>
 		</Paper>

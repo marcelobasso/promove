@@ -94,10 +94,10 @@ const Contact = (props: ContactProps) => {
 							<Text c="white">{dialogMessage}</Text>
 						</Dialog>
 						<form onSubmit={form.onSubmit(handleSubmit)}>
-							<TextInput {...form.getInputProps("name")} label="Seu nome completo" placeholder="seu nome..." />
-							<TextInput {...form.getInputProps("email")} mt="md" label="Seu Email" placeholder="email..." />
-							<TextInput {...form.getInputProps("subject")} mt="md" label="Assunto" placeholder="assunto..." />
-							<Textarea {...form.getInputProps("message")} mt="md" label="Mensagem" placeholder="mensagem..." />
+							<TextInput {...form.getInputProps("name")} label="Seu nome completo" />
+							<TextInput {...form.getInputProps("email")} mt="md" label="Seu Email" />
+							<TextInput {...form.getInputProps("subject")} mt="md" label="Assunto" />
+							<Textarea {...form.getInputProps("message")} mt="md" label="Mensagem" />
 
 							<Button type="submit" mt="md" miw={160}>
 								ENVIAR

@@ -10,12 +10,24 @@
 .reverseText .name,
 .reverseText a {
 	text-align: right;
+
+	@media (min-width: $mantine-breakpoint-sm) {
+		text-align: center;
+	}
 }
 
 .teamText,
 .reverseText {
 	@media (min-width: $mantine-breakpoint-xs) {
 		text-align: center;
+	}
+}
+
+.instaLink {
+	justify-content: "center";
+
+	@media (max-width: $mantine-breakpoint-md) {
+		justify-content: left;
 	}
 }
 

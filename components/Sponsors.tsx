@@ -3,6 +3,7 @@ import { useMediaQuery } from "@mantine/hooks";
 import classes from "./Sponsors.module.css";
 import { Grid } from "@mantine/core";
 import { Fragment } from "react";
+import { FiInstagram } from "react-icons/fi";
 
 interface Sponsor {
 	name: string;
@@ -38,15 +39,20 @@ function Card(props: SponsorCardProp) {
 
 	return (
 		<Grid.Col className={classes.gridCol} span={mobile ? 6 : 2} mt="xl">
-			<Image w={{ base: 80, md: 100 }} className={classes.sponsorImage} m="0 auto" radius={100} src={`/assets/sponsors/${props.sponsor.logo}`} />
+			<a target="_blank" className={classes.instagram} href={`https://instagram.com/${props.sponsor.instagram.slice(1, props.sponsor.instagram.length)}`}>
+				<Image w={{ base: 80, md: 100 }} className={classes.sponsorImage} m="0 auto" radius={100} src={`/assets/sponsors/${props.sponsor.logo}`} />
+			</a>
 			<Text mt="md">
 				<span className={classes.sponsorName}>{props.sponsor.name}</span>
 				<a
+					style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
 					target="_blank"
 					className={classes.instagram}
 					href={`https://instagram.com/${props.sponsor.instagram.slice(1, props.sponsor.instagram.length)}`}
 				>
-					{props.sponsor.instagram}
+					{props.sponsor.instagram.slice(0, 15)}
+					{props.sponsor.instagram.length > 15 ? "..." : ""}
+					<FiInstagram style={{ lineHeight: 16, marginLeft: 8 }} />
 				</a>
 			</Text>
 		</Grid.Col>

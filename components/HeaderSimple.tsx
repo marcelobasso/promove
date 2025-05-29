@@ -20,9 +20,11 @@ export function HeaderSimple(props: HeaderInterface) {
 
 	const items = links.map((link) => (
 		<a
+			href={link.link}
 			key={link.label}
 			className={classes.link}
-			onClick={(_) => {
+			onClick={(e) => {
+				e.preventDefault();
 				props.scroll(link.link);
 				toggle();
 			}}
