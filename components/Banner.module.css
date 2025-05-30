@@ -1,24 +1,30 @@
 #banner {
 	background-color: var(--theme-blue);
+	/* background-color: #fff0b9; */
 	height: calc(100vh - 56px);
 	margin-top: 56px;
 
-	background-image: url("/assets/banner/banner.jpg");
+	background-image: url("/assets/banner/banner-hd.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 
 	@media (max-width: $mantine-breakpoint-sm) {
-		background-image: url("/assets/banner/banner-mobile.jpg");
+		background-image: url("/assets/banner/banner-hd-mobile.jpg");
 	}
 }
 
 .banner {
 	position: relative;
-	height: 90%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	/* background-image: url("/assets/banner/banner-hd.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center; */
 
 	@media (max-width: $mantine-breakpoint-sm) {
 		height: 100%;
