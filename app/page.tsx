@@ -3,7 +3,7 @@
 import { siteContent } from "@/data/home";
 import { useMantineTheme } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
-import { Suspense, useRef } from "react";
+import { RefObject, Suspense, useRef } from "react";
 import { Banner } from "@/components/Banner";
 import About from "@/components/About";
 import Events from "@/components/Events";
@@ -23,13 +23,19 @@ const Home = () => {
 	const eventsRef = useRef<HTMLDivElement>(null);
 	const sponsorsRef = useRef<HTMLDivElement>(null);
 	const contactRef = useRef<HTMLDivElement>(null);
+	type SectionId = "banner" | "about" | "events" | "sponsors" | "contact";
 
-	const scroll = (id: string) => {
-		if (id === "banner") bannerRef.current?.scrollIntoView({ behavior: "smooth" });
-		if (id === "about") aboutRef.current?.scrollIntoView({ behavior: "smooth" });
-		if (id === "events") eventsRef.current?.scrollIntoView({ behavior: "smooth" });
-		if (id === "sponsors") sponsorsRef.current?.scrollIntoView({ behavior: "smooth" });
-		if (id === "contact") contactRef.current?.scrollIntoView({ behavior: "smooth" });
+	const scroll = (id: SectionId) => {
+		const refs: Record<SectionId, RefObject<HTMLDivElement>> = {
+			banner: bannerRef,
+			about: aboutRef,
+			events: eventsRef,
+			sponsors: sponsorsRef,
+			contact: contactRef,
+		};
+
+		const scrollTo = refs[id.substring(1) as SectionId];
+		scrollTo?.current?.scrollIntoView({ behavior: "smooth" });
 	};
 
 	// prettier-ignore

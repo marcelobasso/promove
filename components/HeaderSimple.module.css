@@ -63,3 +63,11 @@
 .header a:hover {
 	cursor: pointer;
 }
+
+a.simpleLink {
+	text-decoration: none;
+
+	@mixin hover {
+		background-color: inherit;
+	}
+}

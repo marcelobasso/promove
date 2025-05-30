@@ -1,13 +1,14 @@
 import { Burger, Container, Group, Paper, Transition } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./HeaderSimple.module.css";
+import Link from "next/link";
 
 const links = [
-	{ link: "banner", label: "Home" },
-	{ link: "about", label: "Quem Somos" },
-	{ link: "events", label: "Eventos" },
-	{ link: "sponsors", label: "Apoiadores" },
-	{ link: "contact", label: "Contato" },
+	{ link: "#banner", label: "Home" },
+	{ link: "#about", label: "Quem Somos" },
+	{ link: "#events", label: "Eventos" },
+	{ link: "#sponsors", label: "Apoiadores" },
+	{ link: "#contact", label: "Contato" },
 ];
 
 interface HeaderInterface {
@@ -44,7 +45,16 @@ export function HeaderSimple(props: HeaderInterface) {
 					hiddenFrom="xs"
 					size="sm"
 				/>
-				<span className={classes.promove}>PROMOVE</span>
+				<Link
+					href=""
+					onClick={(e) => {
+						e.preventDefault();
+						props.scroll("banner");
+					}}
+					className={classes.simpleLink}
+				>
+					<span className={classes.promove}>PROMOVE</span>
+				</Link>
 
 				{/* Desktop menu */}
 				<Group style={{ display: props.links ? "flex" : "none" }} gap={5} visibleFrom="xs">

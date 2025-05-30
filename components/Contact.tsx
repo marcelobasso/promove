@@ -7,6 +7,7 @@ import { useMediaQuery } from "@mantine/hooks";
 import classes from "./Contact.module.css";
 import { useMantineTheme } from "@mantine/core";
 import { sendEmail } from "@/lib/resend";
+import Link from "next/link";
 
 interface ContactProps {
 	title: string;
@@ -107,10 +108,16 @@ const Contact = (props: ContactProps) => {
 
 					<Flex w="100%" direction="column" mt={64} align="start">
 						<span className={classes.text}>
-							<span style={{ fontWeight: 800 }}>Telefone:</span> {props.phone}
+							<span style={{ fontWeight: 800 }}>Telefone:</span>
+							<a className={classes.contactLinks} href={`tel:${props.phone}`}>
+								&nbsp;{props.phone}
+							</a>
 						</span>
 						<span className={classes.text}>
-							<span style={{ fontWeight: 800 }}>Email:</span> {props.email}
+							<span style={{ fontWeight: 800 }}>Email:</span>
+							<a className={classes.contactLinks} href={`mailto:${props.email}`}>
+								&nbsp;{props.email}
+							</a>
 						</span>
 					</Flex>
 				</Flex>
