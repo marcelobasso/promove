@@ -15,7 +15,7 @@ export async function sendEmail(formData: ContactForm) {
 	console.log("sending email");
 
 	const result = await resend.emails.send({
-		from: "Site <vercel@resend.dev>",
+		from: "Site <promove@promovecb.com.br>",
 		to: "contato@promovecb.com.br",
 		subject: `[Site Promove] - ${formData.subject as string}`,
 		html: `<p><strong>Nome:</strong> ${formData.name}</p>
