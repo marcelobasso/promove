@@ -69,11 +69,17 @@ export const siteContent = {
 				link: "#",
 			},
 			{
-				name: "Renata Godoy",
-				logo: "renata-godoy.jpg",
-				instagram: "@renatagodoyconfeitaria",
+				name: "Javy",
+				logo: "javy.jpg",
+				instagram: "@loja_javy",
 				link: "#",
 			},
+			// {
+			// 	name: "Renata Godoy",
+			// 	logo: "renata-godoy.jpg",
+			// 	instagram: "@renatagodoyconfeitaria",
+			// 	link: "#",
+			// },
 			{
 				name: "Santa Borda",
 				logo: "santa-borda.jpg",
