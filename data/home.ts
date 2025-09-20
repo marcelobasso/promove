@@ -94,6 +94,6 @@ export const siteContent = {
 		title: "Entre em contato",
 		description: "Alô, produção!\n\nDúvidas, infos sobre ingressos ou parcerias? Estamos por aqui — respondemos rapidinho, juro.",
 		phone: "54 99637-2555",
-		email: "contato@promovecb.com.br",
+		email: "promove@promovecb.com.br",
 	},
 };
