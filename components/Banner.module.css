@@ -9,9 +9,11 @@
 	background-repeat: no-repeat;
 	background-position: center;
 
-	/* @media (max-width: $mantine-breakpoint-sm) {
-		background-image: url("/assets/banner/banner-hd-mobile.jpg");
-	} */
+
+	/* banner mobile */
+	@media (max-width: $mantine-breakpoint-sm) {
+		background-image: url("/assets/banner/BannerMobile.jpeg");
+	} 
 }
 
 .banner {
