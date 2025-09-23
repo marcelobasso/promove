@@ -3,7 +3,7 @@ export const siteContent = {
 		title: "PRO\nMO\nVE",
 		subtitle: "Sua Plataforma de Eventos em Carlos Barbosa",
 		cta: "Comprar ingressos",
-		ctaLink: "https://www.minipass.com.br/dashboard/event/jn70039q89qkktdtxc1cq6yd9s7qsvbs",
+		ctaLink: "https://www.minipass.com.br/dashboard/event/jn763rr6cnp119qshd8sa6bsm97r48zb",
 	},
 
 	about: {
