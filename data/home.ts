@@ -48,7 +48,7 @@ export const siteContent = {
 		title: "Nossos\nApoiadores",
 		description:
 			"Nossos patrocinadores fazem parte desse show!\n\nObrigado a todas as marcas que apoiam a cultura e ajudam a manter vivos os novos eventos e programações em Carlos Barbosa.",
-		//cta: "Seja um apoiador ;)",
+		cta: "Seja um apoiador ;)",
 		sponsors: [
 			{
 				name: "Kafer Bebidas",
@@ -68,12 +68,12 @@ export const siteContent = {
 				instagram: "@mundoflorescer",
 				link: "#",
 			},
-			//{
-			//	name: "Javy",
-			//	logo: "javy.jpg",
-			//	instagram: "@loja_javy",
-			//	link: "#",
-			//},
+			{
+				name: "Javy",
+				logo: "javy.jpg",
+				instagram: "@loja_javy",
+				link: "#",
+			},
 			// {
 			// 	name: "Renata Godoy",
 			// 	logo: "renata-godoy.jpg",
