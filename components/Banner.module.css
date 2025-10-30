@@ -54,16 +54,11 @@
 }
 
 .box {
-    text-align: center;
-    display: flex;
-    flex-direction: column;          /* Deixa o botão no meio da tela */
-    justify-content: center; /* centraliza verticalmente */
-    align-items: center;     /* centraliza horizontalmente */
-	
-	/*position: absolute;
-	bottom: 32px;               //botão de compra fica no canto inferior
+
+	position: absolute;
+	bottom: 60px;                                             
 	text-align: center;
-    */
+    
 	@media (max-width: $mantine-breakpoint-xs) {
 		width: 70%;
 	}
