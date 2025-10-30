@@ -17,7 +17,7 @@ interface Event {
 interface EventsProps {
 	title: string;
 	description: string;
-	//subDescription: string;
+	subDescription: string;
 	events: Event[];
 }
 
