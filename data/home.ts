@@ -32,7 +32,7 @@ export const siteContent = {
 		title: "Diferentes\nformatos",
 		description:
 			"Confira os formatos que fazem a mágica acontecer! \n\nCada tipo de evento tem uma proposta diferente — e todos têm uma coisa em comum: vão ficar marcados pra sempre na sua memória.",
-		/*subDescription: "Clique no evento e confira as últimas edições ;)",*/
+		subDescription: "Clique no evento e confira as últimas edições ;)",
 		events: [
 			{
 				name: "Comedy",
@@ -48,7 +48,7 @@ export const siteContent = {
 		title: "Nossos\nApoiadores",
 		description:
 			"Nossos patrocinadores fazem parte desse show!\n\nObrigado a todas as marcas que apoiam a cultura e ajudam a manter vivos os novos eventos e programações em Carlos Barbosa.",
-		cta: "Seja um apoiador ;)",
+		/*cta: "Seja um apoiador ;)",*/
 		sponsors: [
 			{
 				name: "Kafer Bebidas",
