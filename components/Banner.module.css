@@ -57,6 +57,7 @@
 
 	position: absolute;
 	bottom: 456px;
+	right: 430px;
 	text-align: center;
     
 	@media (max-width: $mantine-breakpoint-xs) {
