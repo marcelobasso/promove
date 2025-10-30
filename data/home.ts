@@ -68,12 +68,12 @@ export const siteContent = {
 				instagram: "@mundoflorescer",
 				link: "#",
 			},
-			{
-				name: "Javy",
-				logo: "javy.jpg",
-				instagram: "@loja_javy",
-				link: "#",
-			},
+			//{
+			//	name: "Javy",
+			//	logo: "javy.jpg",
+			//	instagram: "@loja_javy",
+			//	link: "#",
+			//},
 			// {
 			// 	name: "Renata Godoy",
 			// 	logo: "renata-godoy.jpg",
