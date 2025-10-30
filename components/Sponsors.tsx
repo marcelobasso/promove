@@ -75,9 +75,9 @@ const Sponsors = (props: SponsorProps) => {
 						{sponsors}
 					</Grid>
 
-					<Text fs="14px" td="underline" m="xl" className={classes.ctaSponsor} onClick={() => props.scroll("contact")}>
+					{/*<Text fs="14px" td="underline" m="xl" className={classes.ctaSponsor} onClick={() => props.scroll("contact")}>
 						{props.cta}
-					</Text>
+					</Text>*/}
 				</Flex>
 			</Container>
 		</section>
