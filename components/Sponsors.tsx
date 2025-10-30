@@ -15,7 +15,7 @@ interface Sponsor {
 interface SponsorProps {
 	title: string;
 	description: string;
-	cta: string;
+	/*cta: string;*/
 	sponsors: Sponsor[];
 	scroll: Function;
 }
