@@ -2,8 +2,8 @@ export const siteContent = {
 	banner: {
 		title: "PRO\nMO\nVE",
 		subtitle: "Sua Plataforma de Eventos em Carlos Barbosa",
-		cta: "Comprar ingressos",
-		ctaLink: "https://www.minipass.com.br/dashboard/event/jn715k4yt773tqd4kjtnc967g17r47zh",
+		cta: "INSCREVA-SE",
+		ctaLink: "https://wa.me/5554996372555?text=Quero%20participar%20do%20campeonato",
 	},
 
 	about: {
