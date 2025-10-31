@@ -30,23 +30,20 @@ export function Banner(props: BannerProps) {
 						</Fragment>
 					))}
 				</h1>
-				<Flex gap="md" justify="center" align="center" direction="column" wrap="wrap" className={classes.box}>
-					<p className={classes.subtitle}>{props.content.subtitle}</p>
-					<a style={{ textDecoration: "none" }} href={props.content.ctaLink} target="_blank">
-						<Button color="var(--theme-gold)" className={classes.cta} variant="filled" size="md">
-							<span style={{ color: "var(--theme-black)" }}>INSCREVA-SE</span>
-						</Button>
-					</a>
-				</Flex>
+				<Flex gap="md" justify="center" align="center" direction="row" wrap="wrap">
+				  <a href={props.content.ctaLink} target="_blank">
+				    <Button color="var(--theme-gold)" className={classes.cta} variant="filled" size="md">
+				      <span style={{ color: "var(--theme-black)" }}>INSCREVA-SE</span>
+				    </Button>
+				  </a>
 				
-				<Flex gap="md" justify="center" align="center" direction="column" wrap="wrap" className={classes.box_2}>
-					<p className={classes.subtitle}>{props.content.subtitle}</p>
-					<a style={{ textDecoration: "none" }} href={props.content.ctaLink_2} target="_blank">
-						<Button color="var(--theme-gold)" className={classes.cta_2} variant="filled" size="md">
-							<span style={{ color: "var(--theme-black)" }}>REGULAMENTO</span>
-						</Button>
-					</a>
+				  <a href={props.content.ctaLink_2} target="_blank">
+				    <Button color="var(--theme-gold)" className={classes.cta_2} variant="filled" size="md">
+				      <span style={{ color: "var(--theme-black)" }}>REGULAMENTO</span>
+				    </Button>
+				  </a>
 				</Flex>
+
 			</Container>
 		</section>
 	);
