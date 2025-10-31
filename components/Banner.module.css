@@ -16,7 +16,6 @@
 		flex-direction: column; /* muda de "row" para "column" */
    	 	gap: 16px; /* espaço entre os botões */
     	bottom: 32px; /* sobe um pouco do rodapé */
-    	transform: translateX(-50%);
 	} 
 }
 
