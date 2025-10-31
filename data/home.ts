@@ -4,6 +4,8 @@ export const siteContent = {
 		subtitle: "Sua Plataforma de Eventos em Carlos Barbosa",
 		cta: "INSCREVA-SE",
 		ctaLink: "https://wa.me/5554996372555?text=Quero%20participar%20do%20campeonato",
+		cta_2: "REGULAMENTO",
+		ctaLink_2: "https://wa.me/5554996372555?text=Quero%20participar%20do%20campeonato",
 	},
 
 	about: {
