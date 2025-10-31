@@ -12,13 +12,6 @@
 	/* banner mobile */
 	@media (max-width: $mantine-breakpoint-sm) {
 		background-image: url("/assets/banner/BannerMobile.jpeg");
-		.box_mobile {
-    		flex-direction: column; /* muda de "row" para "column" */
-    		gap: 16px; /* espaço entre os botões */
-    		bottom: 32px; /* sobe um pouco do rodapé */
-	 		left: 50%;
-			align-items: center;
-  		}
 	}	
 }
 
