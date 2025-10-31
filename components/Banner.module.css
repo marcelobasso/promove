@@ -3,24 +3,24 @@
 	/* background-color: #fff0b9; */
 	height: calc(100vh - 56px);
 	margin-top: 56px;
-
+	position: relative;
 	background-image: url("/assets/banner/BannerPC.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 
+}
 
 	/* banner mobile */
-	@media (max-width: $mantine-breakpoint-sm) {
-		background-image: url("/assets/banner/BannerMobile.jpeg");
-		.box {
-    		flex-direction: column; /* muda de "row" para "column" */
-    		gap: 16px; /* espaço entre os botões */
-    		bottom: 32px; /* sobe um pouco do rodapé */
-    		left: 50%;
-    		transform: translateX(-50%);
-  		}
-	}
+@media (max-width: $mantine-breakpoint-sm) {
+	background-image: url("/assets/banner/BannerMobile.jpeg");
+	.box {
+    	flex-direction: column; /* muda de "row" para "column" */
+    	gap: 16px; /* espaço entre os botões */
+    	bottom: 32px; /* sobe um pouco do rodapé */
+		left: 50%;
+		transform: translateX(-50%);
+  	}
 }
 
 .banner {
