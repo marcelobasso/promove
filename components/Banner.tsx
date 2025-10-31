@@ -30,7 +30,7 @@ export function Banner(props: BannerProps) {
 						</Fragment>
 					))}
 				</h1>
-				<Flex gap="2x1" justify="center" align="center" direction="row" wrap="wrap">
+				<Flex className={classes.box} gap="2x1" justify="center" align="center" direction="row" wrap="wrap">
 				  <a href={props.content.ctaLink} target="_blank">
 				    <Button color="var(--theme-gold)" className={classes.cta} variant="filled" size="md">
 				      <span style={{ color: "var(--theme-black)" }}>INSCREVA-SE</span>
