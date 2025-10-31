@@ -5,7 +5,7 @@ export const siteContent = {
 		cta: "INSCREVA-SE",
 		ctaLink: "https://wa.me/5554996372555?text=Quero%20participar%20do%20campeonato",
 		cta_2: "REGULAMENTO",
-		ctaLink_2: "https://wa.me/5554996372555?text=Quero%20participar%20do%20campeonato",
+		ctaLink_2: "https://docs.google.com/document/d/1oTOKWjBEvsgwifZAtQsQN8cKxBGCwQ3uKfaLEHiP-B8/edit?usp=sharing",
 	},
 
 	about: {
