@@ -10,6 +10,8 @@ interface BannerProps {
 		subtitle: string;
 		cta: string;
 		ctaLink: string;
+		cta_2: string;
+		ctaLink_2: string;
 	};
 }
 
@@ -33,6 +35,11 @@ export function Banner(props: BannerProps) {
 					<a style={{ textDecoration: "none" }} href={props.content.ctaLink} target="_blank">
 						<Button color="var(--theme-gold)" className={classes.cta} variant="filled" size="md">
 							<span style={{ color: "var(--theme-black)" }}>INSCREVA-SE</span>
+						</Button>
+					</a>
+					<a style={{ textDecoration: "none" }} href={props.content.ctaLink_2} target="_blank">
+						<Button color="var(--theme-gold)" className={classes.cta_2} variant="filled" size="md">
+							<span style={{ color: "var(--theme-black)" }}>REGULAMENTO</span>
 						</Button>
 					</a>
 				</Flex>
