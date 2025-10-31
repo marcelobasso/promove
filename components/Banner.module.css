@@ -64,6 +64,17 @@
 	}
 }
 
+.box_2 {
+
+	position: absolute;
+	bottom: 64px;
+	text-align: center;
+    
+	@media (max-width: $mantine-breakpoint-xs) {
+		width: 70%;
+	}
+}
+
 .subtitle {
 	color: var(--theme-black);
 	display: none;
