@@ -79,7 +79,7 @@
 	/* color: var(--theme-black); */
 	font-weight: 700;
 	transition: all 1s;
-	margin-top: -80px;
+	/* margin-top: -80px; */
 
 	@mixin hover {
 		transform: scale(1.03);

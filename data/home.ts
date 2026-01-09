@@ -3,8 +3,7 @@ export const siteContent = {
 		title: "PRO\nMO\nVE",
 		subtitle: "Sua Plataforma de Eventos em Carlos Barbosa",
 		cta: "COMPRE AGORA",
-		ctaLink: "https://share.google/AJngBRRrfOErkxCcr",
-	
+		ctaLink: "https://share.google/AJngBRRrfOErkxCcr"
 	},
 
 	about: {
@@ -47,10 +46,10 @@ export const siteContent = {
 			{
 				name: "Esports",
 				description:
-					"teste",
+					"Fã de e-sports ou esportes? Não se preocupa, a Promove tem eventos pra você também. Sempre com comida boa, bebida gelada e muita gameplay de qualidade, não importa se é com a bola no pé ou o joystick na mão.",
 				link: "esports",
 				image: "game-party.png",
-				imageAlt: "teste",
+				imageAlt: "Eventos de esportes.",
 			},
 		],
 	},
