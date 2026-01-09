@@ -10,12 +10,10 @@ interface BannerProps {
 		subtitle: string;
 		cta: string;
 		ctaLink: string;
-		cta_2: string;
-		ctaLink_2: string;
+
 	};
 }
 
-// to-do: buscar imagens automaticamente em assets/banner_images.
 const images = [];
 
 export function Banner(props: BannerProps) {
@@ -33,15 +31,10 @@ export function Banner(props: BannerProps) {
 				<Flex style={{ height: '100vh' }} gap={16} justify="center" align="center" direction="column" wrap="wrap">
 				  <a href={props.content.ctaLink} target="_blank">
 				    <Button color="var(--theme-gold)" className={classes.cta} variant="filled" size="md">
-				      <span style={{ color: "var(--theme-black)" }}>INSCREVA-SE</span>
+				      <span style={{ color: "var(--theme-black)" }}>COMPRE AGORA</span>
 				    </Button>
 				  </a>
 				
-				  <a href={props.content.ctaLink_2} target="_blank">
-				    <Button color="var(--theme-gold)" className={classes.cta_2} variant="filled" size="md">
-				      <span style={{ color: "var(--theme-black)" }}>REGULAMENTO</span>
-				    </Button>
-				  </a>
 				</Flex>
 
 			</Container>

@@ -4,14 +4,15 @@
 	height: calc(100vh - 56px);
 	margin-top: 56px;
 	position: relative;
-	background-image: url("/assets/banner/BannerPC.jpeg");
+	background-image: url("/assets/banner/BannerPC.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 
 	/* banner mobile */
 	@media (max-width: $mantine-breakpoint-sm) {
-		background-image: url("/assets/banner/BannerMobile.jpeg");
+		background-image: url("/assets/banner/BannerMobile.png");
+		
 	}	
 }
 
@@ -65,17 +66,6 @@
 	}
 }
 
-.box_2 {
-
-	position: absolute;
-	bottom: 64px;
-	text-align: center;
-    
-	@media (max-width: $mantine-breakpoint-xs) {
-		width: 70%;
-	}
-}
-
 .subtitle {
 	color: var(--theme-black);
 	display: none;
@@ -89,11 +79,18 @@
 	/* color: var(--theme-black); */
 	font-weight: 700;
 	transition: all 1s;
+	margin-top: -80px;
 
 	@mixin hover {
 		transform: scale(1.03);
 		-webkit-transform: scale(1.03);
 		box-shadow: 0px 1px 0px 0px;
 		cursor: pointer;
+
+
 	}
+
+	@media (max-width: $mantine-breakpoint-xs) {
+    	margin-top: 450px; /* empurra pra baixo */
+  	}
 }

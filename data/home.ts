@@ -2,10 +2,9 @@ export const siteContent = {
 	banner: {
 		title: "PRO\nMO\nVE",
 		subtitle: "Sua Plataforma de Eventos em Carlos Barbosa",
-		cta: "INSCREVA-SE",
-		ctaLink: "https://docs.google.com/forms/d/e/1FAIpQLSf9vcWHitvmfzU9wbpz_DzvUMsLczWxwULWtBylrt432X_QZw/viewform?usp=dialog",
-		cta_2: "REGULAMENTO",
-		ctaLink_2: "https://docs.google.com/document/d/1oTOKWjBEvsgwifZAtQsQN8cKxBGCwQ3uKfaLEHiP-B8/edit?usp=sharing",
+		cta: "COMPRE AGORA",
+		ctaLink: "https://share.google/AJngBRRrfOErkxCcr",
+	
 	},
 
 	about: {
@@ -43,6 +42,15 @@ export const siteContent = {
 				link: "comedy",
 				image: "comedy.jpg",
 				imageAlt: "Show de stand up comedy.",
+			},
+
+			{
+				name: "Esports",
+				description:
+					"teste",
+				link: "esports",
+				image: "game-party.png",
+				imageAlt: "teste",
 			},
 		],
 	},
