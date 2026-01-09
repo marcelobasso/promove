@@ -1,22 +1,12 @@
 #banner {
 	background-color: var(--theme-blue);
-	/* background-color: #fff0b9; */
 	height: calc(100vh - 56px);
 	margin-top: 56px;
-	position: relative;
-	background-image: url("/assets/banner/BannerPC.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-
-	/* banner mobile */
-	@media (max-width: $mantine-breakpoint-sm) {
-		background-image: url("/assets/banner/BannerMobile.png");
-		
-	}	
 }
 
-
+#banner img {
+	object-fit: cover;
+}
 
 .banner {
 	position: relative;
@@ -24,11 +14,6 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
-	/* background-image: url("/assets/banner/banner-hd.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center; */
 
 	@media (max-width: $mantine-breakpoint-sm) {
 		height: 100%;
