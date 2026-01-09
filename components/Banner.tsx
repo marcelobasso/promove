@@ -32,6 +32,7 @@ export function Banner(props: BannerProps) {
 				alt="Next Event"
 				fill
 				sizes="100vw"
+				quality={50}
     			className="hidden md:block"
 				priority // Critical for the main banner!
 				placeholder="blur" // Shows a blurry version while loading
