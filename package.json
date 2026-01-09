@@ -1,43 +1,43 @@
 {
-	"name": "goldenwings-tips",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint"
-	},
-	"dependencies": {
-		"@mantine/carousel": "^7.5.3",
-		"@mantine/core": "^7.5.3",
-		"@mantine/form": "^7.5.3",
-		"@mantine/hooks": "^7.5.3",
-		"@mantinex/mantine-logo": "^2.0.0",
-		"@netlify/plugin-nextjs": "^4.41.3",
-		"@tabler/icons-react": "^2.47.0",
-		"clsx": "^2.1.0",
-		"embla-carousel": "^8.0.0",
-		"embla-carousel-autoplay": "^8.0.0",
-		"embla-carousel-react": "^8.0.0",
-		"next": "^15.1.7",
-		"prettier": "^3.5.2",
-		"react": "^19.0.0",
-		"react-dom": "^19.0.0",
-		"react-icons": "^5.5.0",
-		"resend": "^4.5.1",
-		"vercel": "^42.2.0"
-	},
-	"devDependencies": {
-		"@types/node": "^20",
-		"@types/react": "^18",
-		"@types/react-dom": "^18",
-		"eslint": "^8",
-		"eslint-config-next": "14.1.0",
-		"next-export-i18n": "^3.0.0",
-		"postcss": "^8.4.35",
-		"postcss-preset-mantine": "^1.13.0",
-		"postcss-simple-vars": "^7.0.1",
-		"typescript": "^5"
-	}
+  "name": "goldenwings-tips",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@mantine/carousel": "^7.5.3",
+    "@mantine/core": "^7.5.3",
+    "@mantine/form": "^7.5.3",
+    "@mantine/hooks": "^7.5.3",
+    "@mantinex/mantine-logo": "^2.0.0",
+    "@netlify/plugin-nextjs": "^4.41.3",
+    "@tabler/icons-react": "^2.47.0",
+    "clsx": "^2.1.0",
+    "embla-carousel": "^8.0.0",
+    "embla-carousel-autoplay": "^8.0.0",
+    "embla-carousel-react": "^8.0.0",
+    "next": "15.1.11",
+    "prettier": "^3.5.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "resend": "^4.5.1",
+    "vercel": "^42.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "next-export-i18n": "^3.0.0",
+    "postcss": "^8.4.35",
+    "postcss-preset-mantine": "^1.13.0",
+    "postcss-simple-vars": "^7.0.1",
+    "typescript": "^5"
+  }
 }
